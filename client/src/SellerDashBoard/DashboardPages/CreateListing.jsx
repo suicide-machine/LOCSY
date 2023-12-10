@@ -45,6 +45,17 @@ export default function CreateListing() {
                 <p>Price(₹)</p>
               </div>
             </div>
+            <div className="flex items-center gap-2">
+              <input
+                type="number"
+                id="stock"
+                required
+                className="p-3 border border-gray-300 rounded-lg"
+              />
+              <div className="flex flex-col items-center">
+                <p>In Stock</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col flex-1 gap-4">

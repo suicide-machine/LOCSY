@@ -15,7 +15,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search..."
-            className="bg-transparent focus:outline-none w-24 sm:w-96 text-xl "
+            className="bg-transparent focus:outline-none w-24 sm:w-40 md:w-60 lg:w-80 text-xl "
           />
           <FaSearch className="text-slate-600 text-xl" />
         </form>
@@ -37,9 +37,11 @@ const Header = () => {
           </Link>
         </ul>
 
-        {/* <div className="">
-          <h3 className="justify-end text-xl">Become a seller</h3>
-        </div> */}
+        <div className="">
+          <Link to={"/addShop"}>
+            <h3 className="justify-end text-xl">Become a seller</h3>
+          </Link>
+        </div>
       </div>
     </header>
   )

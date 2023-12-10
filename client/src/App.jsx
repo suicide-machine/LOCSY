@@ -11,6 +11,7 @@ import SignUp from "./pages/SignUp"
 import Products from "./SellerDashBoard/DashboardPages/Products"
 import SellerDashBoard from "./SellerDashBoard/DashboardPages/SellerDashBoardHome"
 import CreateListing from "./SellerDashBoard/DashboardPages/CreateListing"
+import AddShop from "./Shop/AddShop"
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/dashboard" element={<SellerDashBoard />} />
         <Route path="/products" element={<Products />} />
         <Route path="/addProduct" element={<CreateListing />} />
+        <Route path="/addShop" element={<AddShop />} />
       </Routes>
     </BrowserRouter>
   )
