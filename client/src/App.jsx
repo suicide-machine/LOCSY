@@ -8,6 +8,10 @@ import SignOut from "./pages/SignOut"
 import Header from "./components/Header"
 import SignUp from "./pages/SignUp"
 
+import Products from "./SellerDashBoard/DashboardPages/Products"
+import SellerDashBoard from "./SellerDashBoard/DashboardPages/SellerDashBoardHome"
+import CreateListing from "./SellerDashBoard/DashboardPages/CreateListing"
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,6 +23,10 @@ const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/signup" element={<SignUp />} />
+
+        <Route path="/dashboard" element={<SellerDashBoard />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/addProduct" element={<CreateListing />} />
       </Routes>
     </BrowserRouter>
   )

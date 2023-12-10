@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
-    <header className="shadow-md">
+    <header className="shadow-md ">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
           <img src={Logo} alt="Logo" width={100} height={50} className="" />
@@ -15,7 +15,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search..."
-            className="bg-transparent focus:outline-none w-24 sm:w-64 text-xl "
+            className="bg-transparent focus:outline-none w-24 sm:w-96 text-xl "
           />
           <FaSearch className="text-slate-600 text-xl" />
         </form>
