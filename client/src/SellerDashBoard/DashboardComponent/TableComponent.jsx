@@ -56,14 +56,14 @@ const TableComponent = () => {
         <TableBody>
           {data.map((item) => (
             <TableRow key={item.Name}>
-              <TableCell>{item.Name}</TableCell>
-              <TableCell>
+              <TableCell className="truncate">{item.Name}</TableCell>
+              <TableCell className="truncate">
                 <Text>{item.InStock}</Text>
               </TableCell>
-              <TableCell>
+              <TableCell className="truncate">
                 <Text>{item.Category}</Text>
               </TableCell>
-              <TableCell>
+              <TableCell className="truncate">
                 <Text>{item.Price}</Text>
               </TableCell>
             </TableRow>

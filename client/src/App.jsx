@@ -12,6 +12,7 @@ import Products from "./SellerDashBoard/DashboardPages/Products"
 import SellerDashBoard from "./SellerDashBoard/DashboardPages/SellerDashBoardHome"
 import CreateListing from "./SellerDashBoard/DashboardPages/CreateListing"
 import AddShop from "./Shop/AddShop"
+import Listing from "./pages/Listing"
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/listing" element={<Listing />} />
 
         <Route path="/dashboard" element={<SellerDashBoard />} />
         <Route path="/products" element={<Products />} />
